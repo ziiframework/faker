@@ -1,41 +1,40 @@
 {
-    "name": "yiisoft/yii2-faker",
-    "description": "Fixture generator. The Faker integration for the Yii framework.",
-    "keywords": ["yii2", "faker", "fixture"],
+    "name": "ziiframework/faker",
+    "description": "zii faker",
+    "keywords": ["zii", "faker"],
     "type": "yii2-extension",
     "license": "BSD-3-Clause",
     "support": {
-        "issues": "https://github.com/yiisoft/yii2-faker/issues",
-        "forum": "http://www.yiiframework.com/forum/",
-        "wiki": "http://www.yiiframework.com/wiki/",
-        "irc": "irc://irc.freenode.net/yii",
-        "source": "https://github.com/yiisoft/yii2-faker"
+        "issues": "https://github.com/ziiframework/faker/issues",
+        "source": "https://github.com/ziiframework/faker"
     },
     "authors": [
         {
-            "name": "Mark Jebri",
-            "email": "mark.github@yandex.ru"
+            "name": "Yii Team",
+            "email": "team@yiiframework.com",
+            "homepage": "http://www.yiiframework.com/team",
+            "role": "Founder and project lead"
         }
     ],
     "require": {
-        "yiisoft/yii2": "~2.0.0",
+        "ziiframework/zii": "3.0.x-dev",
         "fzaninotto/faker": "~1.4"
     },
     "require-dev": {
-        "phpunit/phpunit": "<7"
+        "phpunit/phpunit": "^8.5"
     },
     "autoload": {
         "psr-4": {"yii\\faker\\": "src"}
     },
     "extra": {
         "branch-alias": {
-            "dev-master": "2.0.x-dev"
+            "dev-master": "3.0.x-dev"
         }
     },
     "repositories": [
         {
             "type": "composer",
-            "url": "https://asset-packagist.org"
+            "url": "https://asset-packagist.cn"
         }
     ]
 }
