@@ -1,7 +1,7 @@
 {
     "name": "ziiframework/faker",
-    "description": "zii faker",
-    "keywords": ["zii", "faker"],
+    "description": "zii-framework faker",
+    "keywords": ["zii-framework", "faker"],
     "type": "yii2-extension",
     "license": "BSD-3-Clause",
     "support": {
@@ -16,6 +16,8 @@
             "role": "Founder and project lead"
         }
     ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
     "require": {
         "ziiframework/zii": "3.0.x-dev",
         "fzaninotto/faker": "~1.4"
