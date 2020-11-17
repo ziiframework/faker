@@ -19,7 +19,7 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "require": {
-        "ziiframework/zii": "3.0.x-dev",
+        "ziiframework/zii": "~3.1.1",
         "fzaninotto/faker": "~1.4"
     },
     "require-dev": {
@@ -30,7 +30,7 @@
     },
     "extra": {
         "branch-alias": {
-            "dev-master": "3.0.x-dev"
+            "dev-master": "4.0.x-dev"
         }
     },
     "repositories": [
