@@ -33,6 +33,16 @@
             "dev-master": "4.0.x-dev"
         }
     },
+    "repositories": {
+        "packagist": {
+            "type": "composer",
+            "url": "https://repo.packagist.org"
+        },
+        "0": {
+            "type": "composer",
+            "url": "https://asset-packagist.cn"
+        }
+    },
     "scripts": {
         "redo-install": [
             "rm -rf vendor/",
