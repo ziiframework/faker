@@ -18,27 +18,26 @@ jobs:
         steps:
             - name: Checkout
               uses: actions/checkout@v2
+
             - name: Install PHP
               uses: shivammathur/setup-php@v2
               with:
                   php-version: ${{ matrix.php }}
-            - name: Get composer cache directory
-              id: composer-cache
-              run: echo "::set-output name=dir::$(composer config cache-files-dir)"
-            - name: Cache composer dependencies
-              uses: actions/cache@v1
-              with:
-                  path: ${{ steps.composer-cache.outputs.dir }}
-                  key: ${{ runner.os }}-composer-${{ hashFiles('**/composer.lock') }}
-                  restore-keys: ${{ runner.os }}-composer-
+
+            - name: Clean Up
+              run: rm -f composer.lock
+
             - name: Install dependencies
-              run: composer update $DEFAULT_COMPOSER_FLAGS
+              run: composer install $DEFAULT_COMPOSER_FLAGS
+
             - name: Run unit tests with coverage
               run: vendor/bin/phpunit --verbose --coverage-clover=coverage.clover --colors=always
               if: matrix.php == '7.3'
+
             - name: Run unit tests without coverage
               run: vendor/bin/phpunit --verbose --colors=always
               if: matrix.php != '7.3'
+
             - name: Upload code coverage
               run: |
                   wget https://scrutinizer-ci.com/ocular.phar
