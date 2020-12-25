@@ -27,14 +27,9 @@ class FixtureControllerTest extends TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp(): void
     {
         parent::setUp();
-
-        if (defined('HHVM_VERSION')) {
-            // https://github.com/facebook/hhvm/issues/1447
-            $this->markTestSkipped('Can not test on HHVM because require is cached.');
-        }
 
         $this->mockApplication();
 
@@ -49,7 +44,7 @@ class FixtureControllerTest extends TestCase
     /**
      * {@inheritdoc}
      */
-    public function tearDown()
+    public function tearDown(): void
     {
         @unlink(Yii::getAlias('@runtime/faker/user.php'));
         @unlink(Yii::getAlias('@runtime/faker/profile.php'));
