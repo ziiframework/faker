@@ -33,6 +33,12 @@
             "dev-master": "4.0.x-dev"
         }
     },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        }
+    ],
     "scripts": {
         "redo-install": [
             "rm -rf vendor/",
