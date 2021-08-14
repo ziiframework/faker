@@ -19,7 +19,7 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "require": {
-        "ziiframework/zii": "~3.1.1",
+        "ziiframework/zii": ">=3.1.1",
         "fakerphp/faker": "~1.9|~1.10"
     },
     "require-dev": {
@@ -33,12 +33,6 @@
             "dev-master": "4.0.x-dev"
         }
     },
-    "repositories": [
-        {
-            "type": "composer",
-            "url": "https://asset-packagist.cn"
-        }
-    ],
     "scripts": {
         "redo-install": [
             "rm -rf vendor/",
