@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ea40110db19c1860b9efb4826b5686d8",
+    "content-hash": "4df6f14a80efa22b7108dbbdc65645ea",
     "packages": [
         {
             "name": "cebe/markdown",
@@ -235,16 +235,16 @@
         },
         {
             "name": "ziiframework/zii",
-            "version": "3.2.7",
+            "version": "3.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ziiframework/zii.git",
-                "reference": "ca53aba0a1f85e9c3b1f86ef28e78ac874aff2df"
+                "reference": "68e732b5847574dfad72388929b6272f87e6cf3c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ziiframework/zii/zipball/ca53aba0a1f85e9c3b1f86ef28e78ac874aff2df",
-                "reference": "ca53aba0a1f85e9c3b1f86ef28e78ac874aff2df",
+                "url": "https://api.github.com/repos/ziiframework/zii/zipball/68e732b5847574dfad72388929b6272f87e6cf3c",
+                "reference": "68e732b5847574dfad72388929b6272f87e6cf3c",
                 "shasum": ""
             },
             "require": {
@@ -259,7 +259,6 @@
             },
             "require-dev": {
                 "cebe/indent": "^1.0",
-                "cweagans/composer-patches": "^1.6",
                 "phpunit/phpunit": "^8.5"
             },
             "bin": [
@@ -287,7 +286,7 @@
                 {
                     "name": "Yii Team",
                     "email": "team@yiiframework.com",
-                    "homepage": "http://www.yiiframework.com/team",
+                    "homepage": "https://www.yiiframework.com/team",
                     "role": "Founder and project lead"
                 }
             ],
@@ -301,7 +300,7 @@
                 "issues": "https://github.com/ziiframework/zii/issues?state=open",
                 "source": "https://github.com/ziiframework/zii"
             },
-            "time": "2021-03-25T14:20:08+00:00"
+            "time": "2021-08-14T05:58:52+00:00"
         }
     ],
     "packages-dev": [
@@ -2086,5 +2085,5 @@
     "prefer-lowest": false,
     "platform": [],
     "platform-dev": [],
-    "plugin-api-version": "2.0.0"
+    "plugin-api-version": "2.1.0"
 }
