@@ -13,7 +13,7 @@ jobs:
             fail-fast: false
             matrix:
                 os: [ubuntu-latest]
-                php: ['7.3', '7.4', '8.0']
+                php: ['7.4', '8.0']
 
         steps:
             - name: Checkout
@@ -24,23 +24,11 @@ jobs:
               with:
                   php-version: ${{ matrix.php }}
 
-            - name: Clean Up
-              run: rm -f composer.lock
-
             - name: Install dependencies
-              run: composer install $DEFAULT_COMPOSER_FLAGS
-
-            - name: Run unit tests with coverage
-              run: vendor/bin/phpunit --verbose --coverage-clover=coverage.clover --colors=always
-              if: matrix.php == '7.3'
-
-            - name: Run unit tests without coverage
-              run: vendor/bin/phpunit --verbose --colors=always
-              if: matrix.php != '7.3'
-
-            - name: Upload code coverage
               run: |
-                  wget https://scrutinizer-ci.com/ocular.phar
-                  php ocular.phar code-coverage:upload --format=php-clover coverage.clover
-              if: matrix.php == '7.3'
-              continue-on-error: true # if is fork
+                rm -f composer.lock
+                composer install $DEFAULT_COMPOSER_FLAGS
+
+            - name: PHPUnit
+              run: vendor/bin/phpunit --verbose --colors=always
+

@@ -1,6 +1,8 @@
 Yii Framework 2 faker extension Change Log
 ==============================================
 
+upstream changes: [98e4e4c...master](https://github.com/yiisoft/yii2-faker/compare/98e4e4c...master)
+
 2.0.6 under development
 -----------------------
 
