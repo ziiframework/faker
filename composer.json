@@ -39,9 +39,6 @@
         }
     },
     "config": {
-        "platform": {
-            "php": "7.4"
-        },
         "optimize-autoloader": true,
         "sort-packages": true,
         "allow-plugins": {
@@ -55,7 +52,6 @@
     },
     "scripts": {
         "redo-install": [
-            "rm -rf vendor/",
             "rm -f composer.lock",
             "@composer self-update -vvv",
             "@composer install -vvv"
